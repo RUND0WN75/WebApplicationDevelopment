@@ -1,0 +1,12 @@
+flex {
+    display: flex;
+}
+
+body {
+    background-color: aqua;
+}
+
+img {
+    display: flex;
+}
+
