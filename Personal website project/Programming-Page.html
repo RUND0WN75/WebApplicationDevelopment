@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="CSS/digital-portfolio.css">
+    <title>Programming</title>
+</head>
+    <body>
+         <div class="wrapper">
+        <header>
+            <div class="flex">    
+                <h1>Programming</h1> 
+            </div>
+           
+<!--Toolbar-->
+       <nav class="flex-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Resume-Page.html">Resume</a></li>
+                    <li class="dropdown"><a href="Portfolio-Page.html">Portfolio</a>
+                    <ul class="dropdown-content">
+                        <li><a href="Writing-Page.html">Writing</a></li>
+                        <li><a href="Programming-Page.html">Programming</a></li>
+                        <li><a href="Art-Page.html">Art</a></li>
+                    </ul>
+                        </li>
+                        <li><a href="Contact-Page.html">Conclusion</a></li>
+                
+                    <li class="flex-row">
+                        <div class="social-img">
+                            <a href="https://www.google.com/url?q=https%3A%2F%2Fm.facebook.com%2Fcraig.walkup.13%3Ftsid%3D0.15110240480862558%26source%3Dtypeahead&sa=D&sntz=1&usg=AFQjCNFZ27tFprlwA1bmWl_gSDGmlrxadQ"><img src="Webpage-Images/Facebook-logo.jpg" style="width: 50%" alt="Facebook"></a>
+                        </div>
+                        <div class="social-img">
+                            <a href="https://www.instagram.com/beamishvessel52/?hl=en"><img src="Webpage-Images/Instagram-logo.jpg" style="width: 47.5%" alt="Instagram"></a>
+                        </div>
+                        <div class="social-img">
+                            <a href="https://twitter.com/walkupcraig75"><img src="Webpage-Images/Twitter-logo.jpg" style="width: 50%" alt="Twitter"></a>
+                        </div>
+                        </li>
+                </ul>
+                </nav>
+             </header>        
+<!--Slideshow-->           
+             <div class="flex">
+                <div class="slideshow-container">
+                  <div class="mySlides fade">
+                    <div class="numbertext">1 / 2</div>
+                    <img src="Webpage-Images/Programming-Sample-1.jpg" alt="Sample 1" style="width:100%">
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext">2 / 2</div>
+                    <img src="Webpage-Images/Programming-Sample-2.jpg" alt="Sample 2" style="width:100%">
+                  </div>
+
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                <br>
+
+                </div>
+            <div class="transbox">
+            <h2>Analysis</h2>
+            <p>In this slideshow gallery you will discover a gallery of programming samples created by the developer (of this website). As you can see, one of these samples require some HTML and CSS coding.<br><br> The first sample represents my personal Career Website, which shows Software Engineering and Network Engineering. <br><br>The second sample shows the tables, using only HTML. The tables display the country and a little bit of their background info. <br><br>Both of these samples were created in the Brackets desktop software application.<br><br><a href="http://brackets.io/">Brackets</a></p>    
+            </div> 
+<script>
+var slideIndex = 1;
+mySlides(slideIndex);
+
+function plusSlides(n) {
+  mySlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  mySlides(slideIndex = n);
+}
+
+function mySlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+</script>                        
+        </div>
+<!--Footer-->     
+        <footer class="flex-footer">
+            <div class="flex-credit">
+                <p><strong>Developed by Craig Walkup © Copyright 2016</strong></p>
+            </div>
+        </footer> 
+            </div>
+    </body>
+        </html>        

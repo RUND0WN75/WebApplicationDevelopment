@@ -1,0 +1,228 @@
+body {
+    background-image: url(Personal-Website-Background-Image-V2.jpg);
+    background-size: cover;    
+    background-repeat: repeat;
+}
+img {
+    max-width: 100%;
+}
+li.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.social-img {
+    height: 20%;
+    width: 20%;
+}
+.flex {
+    display: flex;
+}
+div.transbox {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 255, 255, 0.5);
+    border: solid black;
+    margin-top: 1%;
+}
+p {
+    font-size: 125%;
+    font-weight: bold;
+    padding: 1%;
+}
+ul, li {
+    font-size: 100%;
+    font-weight: bold;
+}
+/*Flex-nav*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+nav a {
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    background-color: hotpink;
+    padding: 1% 1%;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition:all 0.5s;
+}
+a:hover {
+    background-color: darkgrey;
+}
+/*Navbar*/
+.wrapper {
+    margin: 0 auto;
+    max-width: 75%;
+}
+/*flex-container*/
+.flex-nav > ul {
+    border: solid black;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+}
+.flex-nav li {
+    flex: 1;
+    width: 100%;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    position: absolute;
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 9;
+    width: 100%;
+}
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+/*SLIDESHOW- 
+slideshow container*/
+.slideshow-container {
+  display: flex;    
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  margin-top: 1%;      
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: gold;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* Caption text */
+.text {
+  color: orange;
+  font-size: 29px;
+  font-family: fantasy;
+  font-style: oblique;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/*Footer*/
+footer {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20%;
+    width: 100%;
+    height: 100%;
+    border: solid black;
+}
+div.flex-credit {
+    display: flex;
+    text-align: center;
+}
+@media screen and (max-width: 1024px) {
+    .wrapper {
+    margin: 0 auto;
+    max-width: 100%;
+    }
+    li.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.social-img {
+    display: flex;
+    height: 50%;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    .flex-nav > ul, .flex-nav li {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .flex {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .slideshow-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .next {
+        display: flex;
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    footer {
+        display: flex;
+        margin-top: 15%;
+    }
+}
+@media screen and (max-width: 480px) { 
+    .next {
+        display: flex;
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    footer {
+        display: flex;
+        margin-top: 15%;
+    }
+}
